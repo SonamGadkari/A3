@@ -1,0 +1,32 @@
+<% include header %>
+<div id="body-style">
+<header><b>Please fill the details below for Income tax calculation</b></header><br>
+<div class="row">
+<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3"> </div>
+<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 form-style">
+<form id="form1">
+<p><b>Income after Standard deduction</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Income" title="Enter your income in dollars" placeholder="Ex:40000" pattern="[0-9]{1,20}" required><br>
+<p><b>Deductions</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Deduction" title="Enter your deductions in dollars" placeholder="Ex:2000" pattern="[0-9]+" required><br>
+<p><b>Location</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Location" title="Enter your location in USA" placeholder="Arizona" pattern="[A-Za-z]+" required><br>
+<p><b>Filling Status</b></p>
+<select id="ddlViewBy">
+<option value="Single">Single</option> 	
+<option value="Married">Married</option>
+<option value="None">None</option>
+</select>
+<button type="button" name="Submit" onclick="IncomeTax()">Submit</button>
+<p id="demo"></p>
+</form>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> </div>
+</div>
+</div>
+<script src="js/Tax.js">
+</script>
+</body>
+</html>
+
+
